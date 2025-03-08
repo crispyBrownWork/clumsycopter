@@ -1,9 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://b857ynnsaqcbe"]
 
-[ext_resource type="Script" path="res://world_environment.gd" id="1_xxxxx"]
-[ext_resource type="PackedScene" path="res://Player.tscn" id="2_xxxxx"]
-[ext_resource type="Script" path="res://infinite_terrain.gd" id="3_xxxxx"]
-[ext_resource type="Script" path="res://infinite_ui.gd" id="5_xxxxx"]
+[ext_resource type="Script" uid="uid://bg7y3gwx056fn" path="res://world_environment.gd" id="1_xxxxx"]
+[ext_resource type="PackedScene" uid="uid://cqw1o8ii1bwwc" path="res://Player.tscn" id="2_xxxxx"]
+
+[sub_resource type="Resource" id="Resource_q80to"]
+metadata/__load_path__ = "res://infinite_ui.gd"
+
+[sub_resource type="Resource" id="Resource_68s5o"]
+metadata/__load_path__ = "res://infinite_terrain.gd"
 
 [node name="InfiniteLevel" type="Node2D"]
 script = ExtResource("1_xxxxx")
@@ -12,7 +16,7 @@ script = ExtResource("1_xxxxx")
 position = Vector2(0, 0)
 
 [node name="UI" parent="Player/Camera2D" index="0"]
-script = ExtResource("5_xxxxx")
+script = SubResource("Resource_q80to")
 
 [node name="Timer" parent="Player/Camera2D/UI/CanvasLayer" index="0"]
 visible = false
@@ -35,7 +39,7 @@ offset_bottom = 76.0
 text = "Best: 0m"
 
 [node name="Terrain" type="Node2D" parent="."]
-script = ExtResource("3_xxxxx")
+script = SubResource("Resource_68s5o")
 
 [connection signal="end" from="Terrain" to="." method="_on_terrain_end"]
 

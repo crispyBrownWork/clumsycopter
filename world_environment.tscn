@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://ch3mb06am8rf5"]
 
-[ext_resource type="Script" path="res://world_environment.gd" id="1_so6sr"]
+[ext_resource type="Script" uid="uid://bg7y3gwx056fn" path="res://world_environment.gd" id="1_so6sr"]
 [ext_resource type="Texture2D" uid="uid://dmwpxef7cytkq" path="res://HelicopterSprite.png" id="1_umgt1"]
 [ext_resource type="PackedScene" uid="uid://bys515vctmbwe" path="res://terrain.tscn" id="2_0phas"]
-[ext_resource type="Script" path="res://timerUI.gd" id="5_3pa1q"]
-[ext_resource type="Script" path="res://timeLabel.gd" id="5_kckms"]
+[ext_resource type="Script" uid="uid://rhfcfmofr68j" path="res://timerUI.gd" id="5_3pa1q"]
+[ext_resource type="Script" uid="uid://sdonb3hgf3yc" path="res://timeLabel.gd" id="5_kckms"]
 [ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://TextSettings.tres" id="6_tb8r3"]
-[ext_resource type="Script" path="res://best_label.gd" id="7_tdnq7"]
-[ext_resource type="Script" path="res://RigidBody2D.gd" id="11_k5bjk"]
+[ext_resource type="Script" uid="uid://dl5ltc2csi7eg" path="res://best_label.gd" id="7_tdnq7"]
+[ext_resource type="Script" uid="uid://ugmxb0cy2lct" path="res://RigidBody2D.gd" id="11_k5bjk"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rr4a7"]
 friction = 0.3
@@ -55,22 +55,24 @@ script = ExtResource("5_3pa1q")
 [node name="CanvasLayer" type="CanvasLayer" parent="Player/Camera2D/UI"]
 
 [node name="Timer" type="Label" parent="Player/Camera2D/UI/CanvasLayer"]
-offset_left = 268.0
-offset_top = 440.0
-offset_right = 336.0
-offset_bottom = 462.0
+offset_left = 846.0
+offset_top = 165.0
+offset_right = 951.0
+offset_bottom = 187.0
 text = "Timer: "
 label_settings = ExtResource("6_tb8r3")
 script = ExtResource("5_kckms")
+metadata/_edit_use_anchors_ = true
 
 [node name="Best" type="Label" parent="Player/Camera2D/UI/CanvasLayer"]
-offset_left = 273.0
-offset_top = 482.0
-offset_right = 2523.0
-offset_bottom = 982.0
+offset_left = 845.0
+offset_top = 137.0
+offset_right = 3095.0
+offset_bottom = 637.0
 text = "Best: "
 label_settings = ExtResource("6_tb8r3")
 script = ExtResource("7_tdnq7")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="end" from="." to="Player/Camera2D/UI/CanvasLayer/Timer" method="_on_world_environment_end"]
 [connection signal="end" from="Terrain" to="." method="_on_terrain_end"]
