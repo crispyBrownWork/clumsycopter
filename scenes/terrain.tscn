@@ -1,15 +1,15 @@
 [gd_scene load_steps=168 format=3 uid="uid://bys515vctmbwe"]
 
 [ext_resource type="Script" uid="uid://8mc71q6w875e" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="1_ic18d"]
-[ext_resource type="Script" uid="uid://chvil38xfnb0o" path="res://terrain.gd" id="1_tw3sa"]
+[ext_resource type="Script" uid="uid://chvil38xfnb0o" path="res://scripts/terrain.gd" id="1_tw3sa"]
 [ext_resource type="Script" uid="uid://c164x50x05o7o" path="res://addons/rmsmartshape/vertex_properties.gd" id="2_m7saq"]
 [ext_resource type="Script" uid="uid://b07uogp2s8to3" path="res://addons/rmsmartshape/shapes/point.gd" id="3_hqwh4"]
 [ext_resource type="Script" uid="uid://dg8mdb77rr8w8" path="res://addons/rmsmartshape/shapes/point_array.gd" id="4_yc11a"]
 [ext_resource type="Script" uid="uid://c1myek3wcuqnu" path="res://addons/rmsmartshape/materials/edge_material.gd" id="5_bv3iw"]
 [ext_resource type="Script" uid="uid://tqml5su0o7vy" path="res://addons/rmsmartshape/normal_range.gd" id="7_eeu0y"]
-[ext_resource type="Texture2D" uid="uid://dloa20qh6p5ko" path="res://rockEdgev2.png" id="8_g4c15"]
+[ext_resource type="Texture2D" uid="uid://dloa20qh6p5ko" path="res://images/rockEdgev2.png" id="8_g4c15"]
 [ext_resource type="Script" uid="uid://b48f65xpoinjx" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="8_mrvl3"]
-[ext_resource type="Texture2D" uid="uid://4la644b2n1cf" path="res://rockFacev2.png" id="10_1nnbq"]
+[ext_resource type="Texture2D" uid="uid://4la644b2n1cf" path="res://images/rockFacev2.png" id="10_1nnbq"]
 [ext_resource type="Script" uid="uid://bi80gj87of3xd" path="res://addons/rmsmartshape/materials/shape_material.gd" id="10_jjogi"]
 [ext_resource type="Script" uid="uid://l225i022gacs" path="res://addons/rmsmartshape/shapes/shape_render.gd" id="11_4wuwf"]
 

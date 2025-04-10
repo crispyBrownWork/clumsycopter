@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqw1o8ii1bwwc"]
 
-[ext_resource type="Script" uid="uid://ugmxb0cy2lct" path="res://RigidBody2D.gd" id="1_7uhui"]
-[ext_resource type="Texture2D" uid="uid://dmwpxef7cytkq" path="res://HelicopterSprite.png" id="2_fg4tr"]
-[ext_resource type="Script" uid="uid://rhfcfmofr68j" path="res://timerUI.gd" id="3_nnysx"]
-[ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://TextSettings.tres" id="4_xt568"]
-[ext_resource type="Script" uid="uid://sdonb3hgf3yc" path="res://timeLabel.gd" id="5_lrhlq"]
-[ext_resource type="Script" uid="uid://dl5ltc2csi7eg" path="res://best_label.gd" id="6_spnyw"]
+[ext_resource type="Script" uid="uid://ugmxb0cy2lct" path="res://scripts/RigidBody2D.gd" id="1_7uhui"]
+[ext_resource type="Texture2D" uid="uid://dmwpxef7cytkq" path="res://images/HelicopterSprite.png" id="2_fg4tr"]
+[ext_resource type="Script" uid="uid://rhfcfmofr68j" path="res://scripts/timerUI.gd" id="3_nnysx"]
+[ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://themes/TextSettings.tres" id="4_xt568"]
+[ext_resource type="Script" uid="uid://sdonb3hgf3yc" path="res://scripts/timeLabel.gd" id="5_lrhlq"]
+[ext_resource type="Script" uid="uid://dl5ltc2csi7eg" path="res://scripts/best_label.gd" id="6_spnyw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rr4a7"]
 friction = 0.3

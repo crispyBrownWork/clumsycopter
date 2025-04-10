@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://db1bgvesx6na4"]
 
-[ext_resource type="Script" uid="uid://qjrwj7u7by11" path="res://main_menu.gd" id="1_xxxxx"]
-[ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://TextSettings.tres" id="2_4voe1"]
-[ext_resource type="Theme" uid="uid://07rov5hggkb6" path="res://buttonTheme.tres" id="3_oebou"]
+[ext_resource type="Script" uid="uid://qjrwj7u7by11" path="res://scripts/main_menu.gd" id="1_xxxxx"]
+[ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://themes/TextSettings.tres" id="2_4voe1"]
+[ext_resource type="Theme" uid="uid://07rov5hggkb6" path="res://themes/buttonTheme.tres" id="3_oebou"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

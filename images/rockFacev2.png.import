@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmwpxef7cytkq"
-path="res://.godot/imported/HelicopterSprite.png-4569dff5f602e65a86c55ea18004ee1d.ctex"
+uid="uid://4la644b2n1cf"
+path="res://.godot/imported/rockFacev2.png-bc412b7662aa76c81a1a7a2a1c2a2458.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://HelicopterSprite.png"
-dest_files=["res://.godot/imported/HelicopterSprite.png-4569dff5f602e65a86c55ea18004ee1d.ctex"]
+source_file="res://images/rockFacev2.png"
+dest_files=["res://.godot/imported/rockFacev2.png-bc412b7662aa76c81a1a7a2a1c2a2458.ctex"]
 
 [params]
 

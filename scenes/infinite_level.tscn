@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b857ynnsaqcbe"]
 
-[ext_resource type="Script" uid="uid://bg7y3gwx056fn" path="res://world_environment.gd" id="1_xxxxx"]
-[ext_resource type="PackedScene" uid="uid://cqw1o8ii1bwwc" path="res://Player.tscn" id="2_xxxxx"]
+[ext_resource type="Script" uid="uid://bg7y3gwx056fn" path="res://scripts/world_environment.gd" id="1_xxxxx"]
+[ext_resource type="PackedScene" uid="uid://cqw1o8ii1bwwc" path="res://scenes/Player.tscn" id="2_xxxxx"]
 
 [sub_resource type="Resource" id="Resource_q80to"]
 metadata/__load_path__ = "res://infinite_ui.gd"

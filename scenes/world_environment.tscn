@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://ch3mb06am8rf5"]
 
-[ext_resource type="Script" uid="uid://bg7y3gwx056fn" path="res://world_environment.gd" id="1_so6sr"]
-[ext_resource type="Texture2D" uid="uid://dmwpxef7cytkq" path="res://HelicopterSprite.png" id="1_umgt1"]
-[ext_resource type="PackedScene" uid="uid://bys515vctmbwe" path="res://terrain.tscn" id="2_0phas"]
-[ext_resource type="Script" uid="uid://rhfcfmofr68j" path="res://timerUI.gd" id="5_3pa1q"]
-[ext_resource type="Script" uid="uid://sdonb3hgf3yc" path="res://timeLabel.gd" id="5_kckms"]
-[ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://TextSettings.tres" id="6_tb8r3"]
-[ext_resource type="Script" uid="uid://dl5ltc2csi7eg" path="res://best_label.gd" id="7_tdnq7"]
-[ext_resource type="Script" uid="uid://ugmxb0cy2lct" path="res://RigidBody2D.gd" id="11_k5bjk"]
+[ext_resource type="Script" uid="uid://bg7y3gwx056fn" path="res://scripts/world_environment.gd" id="1_bk40k"]
+[ext_resource type="PackedScene" uid="uid://bys515vctmbwe" path="res://scenes/terrain.tscn" id="2_jnk36"]
+[ext_resource type="Script" uid="uid://ugmxb0cy2lct" path="res://scripts/RigidBody2D.gd" id="3_1qy5v"]
+[ext_resource type="Texture2D" uid="uid://dmwpxef7cytkq" path="res://images/HelicopterSprite.png" id="4_6e6m2"]
+[ext_resource type="Script" uid="uid://rhfcfmofr68j" path="res://scripts/timerUI.gd" id="5_lw3p6"]
+[ext_resource type="LabelSettings" uid="uid://dq8prhjsjis6g" path="res://themes/TextSettings.tres" id="6_k3r3j"]
+[ext_resource type="Script" uid="uid://sdonb3hgf3yc" path="res://scripts/timeLabel.gd" id="7_23g7s"]
+[ext_resource type="Script" uid="uid://dl5ltc2csi7eg" path="res://scripts/best_label.gd" id="8_stap3"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rr4a7"]
 friction = 0.3
@@ -18,18 +18,18 @@ radius = 12.0
 height = 56.0
 
 [node name="WorldEnvironment" type="Node2D"]
-script = ExtResource("1_so6sr")
+script = ExtResource("1_bk40k")
 
-[node name="Terrain" parent="." instance=ExtResource("2_0phas")]
+[node name="Terrain" parent="." instance=ExtResource("2_jnk36")]
 
 [node name="Player" type="RigidBody2D" parent="."]
 position = Vector2(412, 413)
 physics_material_override = SubResource("PhysicsMaterial_rr4a7")
-script = ExtResource("11_k5bjk")
+script = ExtResource("3_1qy5v")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture_filter = 1
-texture = ExtResource("1_umgt1")
+texture = ExtResource("4_6e6m2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(0, 1)
@@ -50,7 +50,7 @@ drag_bottom_margin = 0.0
 
 [node name="UI" type="Node2D" parent="Player/Camera2D"]
 scale = Vector2(1e-05, 1e-05)
-script = ExtResource("5_3pa1q")
+script = ExtResource("5_lw3p6")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player/Camera2D/UI"]
 
@@ -60,8 +60,8 @@ offset_top = 165.0
 offset_right = 951.0
 offset_bottom = 187.0
 text = "Timer: "
-label_settings = ExtResource("6_tb8r3")
-script = ExtResource("5_kckms")
+label_settings = ExtResource("6_k3r3j")
+script = ExtResource("7_23g7s")
 metadata/_edit_use_anchors_ = true
 
 [node name="Best" type="Label" parent="Player/Camera2D/UI/CanvasLayer"]
@@ -70,8 +70,8 @@ offset_top = 137.0
 offset_right = 3095.0
 offset_bottom = 637.0
 text = "Best: "
-label_settings = ExtResource("6_tb8r3")
-script = ExtResource("7_tdnq7")
+label_settings = ExtResource("6_k3r3j")
+script = ExtResource("8_stap3")
 metadata/_edit_use_anchors_ = true
 
 [connection signal="end" from="." to="Player/Camera2D/UI/CanvasLayer/Timer" method="_on_world_environment_end"]

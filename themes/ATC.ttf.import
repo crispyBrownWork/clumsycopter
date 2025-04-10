@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bbnyqonnrao05"
-path="res://.godot/imported/ATC.ttf-f78ebcf2ab687ffecdc50895cbcd37e1.fontdata"
+path="res://.godot/imported/ATC.ttf-c0868631521959fc617831938cd11e5e.fontdata"
 
 [deps]
 
-source_file="res://ATC.ttf"
-dest_files=["res://.godot/imported/ATC.ttf-f78ebcf2ab687ffecdc50895cbcd37e1.fontdata"]
+source_file="res://themes/ATC.ttf"
+dest_files=["res://.godot/imported/ATC.ttf-c0868631521959fc617831938cd11e5e.fontdata"]
 
 [params]
 

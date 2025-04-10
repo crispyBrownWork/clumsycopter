@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://07rov5hggkb6"]
 
-[ext_resource type="FontFile" uid="uid://bbnyqonnrao05" path="res://ATC.ttf" id="1_do4i4"]
+[ext_resource type="FontFile" uid="uid://bbnyqonnrao05" path="res://themes/ATC.ttf" id="1_do4i4"]
 
 [resource]
 default_font = ExtResource("1_do4i4")
